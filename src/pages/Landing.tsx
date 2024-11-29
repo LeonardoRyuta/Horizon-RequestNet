@@ -1,9 +1,14 @@
-import { Heading, VStack } from "@chakra-ui/react";
+import { Heading, Text, Button } from "@chakra-ui/react";
+import { useState } from 'react'
 
 export default function Landing() {
+  const [count, setCount] = useState(0)
+
   return (
-    <VStack>
+    <>
       <Heading>Horizon</Heading>
-    </VStack>
+      <Text>Count: {count}</Text>
+      <Button onClick={() => setCount(count + 1)}>Increment</Button>
+    </>
   )
 }
