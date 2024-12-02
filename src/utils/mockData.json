@@ -1,0 +1,50 @@
+{
+  "deals": [
+    {
+      "name": "Items1",
+      "description": "This is item 1",
+      "image": "./coffee beans.jpg",
+      "expirationDate": 1735572302,
+      "tags": [
+        "tag1",
+        "tag2"
+      ],
+      "requirements": [
+        "req1",
+        "req2"
+      ]
+    }
+  ],
+
+  "history": [
+    {
+      "name": "Items1",
+      "description": "You bought this item",
+      "image": "./coffee grinder.jpg",
+      "boughtDate": 1730301902,
+      "tags": [
+        "tag1",
+        "tag2"
+      ]
+    },
+    {
+      "name": "Items2",
+      "description": "You bought this item",
+      "image": "./coffee machine.jpg",
+      "boughtDate": 1730301902,
+      "tags": [
+        "tag1",
+        "tag2"
+      ]
+    },
+    {
+      "name": "Items3",
+      "description": "You bought this item",
+      "boughtDate": 1730301902,
+      "tags": [
+        "tag1",
+        "tag2"
+      ]
+    }
+  ]
+}

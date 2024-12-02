@@ -7,7 +7,7 @@ export default function Layout() {
     <VStack
       w="300px"
       h="500px"
-      p="2rem"
+      p="0.5rem"
       border="2px solid white"
     >
       {/* <Navbar /> */}
