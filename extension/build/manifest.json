@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "name": "Horizon Extension",
+  "description": "This is a Chrome extension built with React and TypeScript",
+  "action": {
+      "default_popup": "index.html",
+      "default_title": "Horizon Extension"
+  },
+  "permissions": []
+}
