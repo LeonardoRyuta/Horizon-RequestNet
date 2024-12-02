@@ -1,8 +1,21 @@
 import { Heading, VStack, Card, Image, AspectRatio, Badge, Text, Flex, Center } from "@chakra-ui/react"
-import { mockData } from "@/utils"
+import { mockData, requestNet } from "@/utils"
+import { useEffect } from "react"
 
 export default function Available() {
   const deals = mockData.deals
+
+  const getTxs = async () => {
+    const txs = await requestNet.getRequestsByWalletAddress("0x2346ac3Bc15656D4dE1da99384B5498A75f128a2")
+    console.log(txs)
+
+    return txs
+  }
+
+  useEffect(() => {
+    getTxs()
+
+  }, [])
 
   return (
     <VStack w="full" h="full" alignItems="flex-start">
