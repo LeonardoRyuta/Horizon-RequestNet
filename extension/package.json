@@ -7,10 +7,12 @@
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build": "tsc -b && vite build"
+    "build": "tsc -b && vite build",
+    "build-extension": "npm run build && copy manifest.json build\\ && copy src\\contentScript.js build\\"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.2.1",
+    "@crxjs/vite-plugin": "^2.0.0-beta.28",
     "@emotion/react": "^11.13.5",
     "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
     "@requestnetwork/payment-processor": "^0.48.0",

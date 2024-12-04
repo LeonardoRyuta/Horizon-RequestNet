@@ -1,50 +1,55 @@
 {
   "deals": [
     {
-      "name": "Items1",
-      "description": "This is item 1",
-      "image": "./coffee beans.jpg",
+      "id": 3,
+      "name": "Premium Coffee Beans",
+      "description": "This is a pack of premium coffee beans",
+      "image": "https://m.media-amazon.com/images/I/61RxP-B4x9L._AC_UF894,1000_QL80_.jpg",
       "expirationDate": 1735572302,
       "discount": 20,
       "tags": [
-        "tag1",
-        "tag2"
+        "coffee"
       ],
       "requirements": [
-        "req1",
-        "req2"
-      ]
-    }
-  ],
-
-  "history": [
-    {
-      "name": "Items1",
-      "description": "You bought this item",
-      "image": "./coffee grinder.jpg",
-      "boughtDate": 1730301902,
-      "tags": [
-        "tag1",
-        "tag2"
+        {
+          "type": "spend",
+          "amount": 1
+        }
       ]
     },
     {
-      "name": "Items2",
-      "description": "You bought this item",
-      "image": "./coffee machine.jpg",
-      "boughtDate": 1730301902,
+      "id": 2,
+      "name": "3 pack coffee beans set",
+      "description": "This is a set of 3 differe coffee bean packs",
+      "image": "https://bootkoffie.com/pub/media/catalog/product/cache/59f79376f0a6165c0db3cbccf88c44a0/b/o/boot_3-delig_garantie_op_succes_250_new.jpg",
+      "expirationDate": 1735572302,
+      "discount": 10,
       "tags": [
-        "tag1",
-        "tag2"
+        "coffee"
+      ],
+      "requirements": [
+        {
+          "type": "quantity",
+          "amount": 1
+        }
       ]
     },
     {
+      "id": 1,
       "name": "Items3",
-      "description": "You bought this item",
-      "boughtDate": 1730301902,
+      "description": "This is item 3",
+      "image": "./coffee grinder.jpg",
+      "expirationDate": 1735572302,
+      "discount": 30,
       "tags": [
-        "tag1",
-        "tag2"
+        "coffee",
+        "machine"
+      ],
+      "requirements": [
+        {
+          "type": "spend",
+          "amount": 10
+        }
       ]
     }
   ]

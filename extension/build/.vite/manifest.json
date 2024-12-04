@@ -1,0 +1,39 @@
+{
+  "../../../../../../@crx/manifest": {
+    "file": "assets/crx-manifest.js.js",
+    "name": "crx-manifest.js",
+    "src": "../../../../../../@crx/manifest",
+    "isEntry": true
+  },
+  "_contentScript.js-loader.js": {
+    "file": "assets/contentScript.js-loader.js",
+    "src": "_contentScript.js-loader.js"
+  },
+  "index.html": {
+    "file": "assets/main.js",
+    "name": "main",
+    "src": "index.html",
+    "isEntry": true,
+    "css": [
+      "assets/main.css"
+    ]
+  },
+  "src/background.js": {
+    "file": "assets/background.js",
+    "name": "background",
+    "src": "src/background.js",
+    "isEntry": true
+  },
+  "src/contentScript.js": {
+    "file": "assets/contentScript.js",
+    "name": "contentScript",
+    "src": "src/contentScript.js",
+    "isEntry": true
+  },
+  "src/injectedScript.js": {
+    "file": "assets/injectedScript.js",
+    "name": "injectedScript",
+    "src": "src/injectedScript.js",
+    "isEntry": true
+  }
+}
