@@ -8,17 +8,18 @@
       "expirationDate": 1735572302,
       "discount": 20,
       "tags": [
-        "coffee"
+        "machine"
       ],
       "requirements": [
         {
           "type": "spend",
-          "amount": 1
+          "amount": 8
         }
-      ]
+      ],
+      "applied": false
     },
     {
-      "id": 2,
+      "id": 1,
       "name": "3 pack coffee beans set",
       "description": "This is a set of 3 differe coffee bean packs",
       "image": "https://bootkoffie.com/pub/media/catalog/product/cache/59f79376f0a6165c0db3cbccf88c44a0/b/o/boot_3-delig_garantie_op_succes_250_new.jpg",
@@ -32,10 +33,11 @@
           "type": "quantity",
           "amount": 1
         }
-      ]
+      ],
+      "applied": false
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Items3",
       "description": "This is item 3",
       "image": "./coffee grinder.jpg",
@@ -50,7 +52,8 @@
           "type": "spend",
           "amount": 10
         }
-      ]
+      ],
+      "applied":false
     }
   ]
 }

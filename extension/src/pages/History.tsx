@@ -1,6 +1,9 @@
 import { AspectRatio, Card, Center, Flex, Heading, VStack, Image, Text, HStack, Box } from '@chakra-ui/react'
+import { FiExternalLink } from 'react-icons/fi'
 
-export default function History ({ txs }: { txs: any[] }) {
+export default function History({ txs }: { txs: any[] }) {
+  console.log(txs)
+
   return (
     <VStack w="full" h="full" alignItems="flex-start">
       <Heading>History</Heading>
@@ -17,7 +20,7 @@ export default function History ({ txs }: { txs: any[] }) {
                     {tx.name}
                   </Text>
                   <Text fontSize="xs">
-                    {tx.description}	
+                    {tx.description}
                   </Text>
                   <Text fontSize="xs">
                     {` ${new Date(tx.time * 1000).toLocaleDateString()} `}
@@ -30,11 +33,17 @@ export default function History ({ txs }: { txs: any[] }) {
                     ))}
                   </HStack>
                 </Flex>
-                <Center>
+                <VStack justify="space-between" py={2}>
+                  <Center>
+                    <FiExternalLink onClick={() => {
+                      window.open(`https://scan.request.network/request/${tx.id}`, '_blank')
+                    }} />
+                  </Center>
+
                   <Text fontSize="xs" fontWeight="bold" color="fg.strong">
                     ${tx.price}
                   </Text>
-                </Center>
+                </VStack>
               </Card.Body>
             </Card.Root>
           )

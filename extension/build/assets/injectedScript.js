@@ -1,9 +1,1 @@
-window.addEventListener('message', (event) => {
-  if (event.source !== window || event.data.type !== 'APPLY_DEAL') return;
-
-  const deal = JSON.parse(event.data.data);
-
-  
-
-  console.log("Received message from extension:", deal);
-});
+window.addEventListener("message",e=>{if(e.source!==window||e.data.type!=="APPLY_DEAL")return;const a=JSON.parse(e.data.data);console.log("Received message from extension:",a)});

@@ -20,30 +20,22 @@
   },
   "content_scripts": [
     {
+      "js": [
+        "assets/contentScript.js-loader.js"
+      ],
       "matches": [
         "<all_urls>"
-      ],
-      "js": [
-        "src/contentScript.js-loader.js"
       ]
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": [
-        "*.js"
-      ],
-      "matches": [
-        "<all_urls>"
-      ]
-    },
-    {
       "matches": [
         "<all_urls>"
       ],
       "resources": [
-        "**/*",
-        "*"
+        "*.js",
+        "assets/contentScript.js"
       ],
       "use_dynamic_url": false
     }

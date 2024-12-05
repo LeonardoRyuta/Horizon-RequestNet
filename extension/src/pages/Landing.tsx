@@ -5,7 +5,7 @@ import Others from "./Others";
 import History from "./History";
 import { requestNet, mockData } from "@/utils";
 import { IRequestDataWithEvents } from "@requestnetwork/request-client.js/dist/types";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Landing() {
   const [txs, setTxs] = useState<any[]>([])
