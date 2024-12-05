@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Coffee Machine",
+      "description": "This is a coffee machine",
+      "image": "https://m.media-amazon.com/images/I/612FBOMlW9L.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "price": 10,
+      "tags": ["coffee", "machine"]
+    },
+    {
+      "id": 2,
+      "name": "Coffee Grinder",
+      "description": "This is a coffee grinder",
+      "image": "https://m.media-amazon.com/images/I/71DeUg8G7kS.jpg",
+      "price": 1,
+      "tags": ["coffee", "grinder"]
+    },
+    {
+      "id": 3,
+      "name": "Premium Coffee Beans",
+      "description": "This is a pack of premium coffee beans",
+      "image": "https://m.media-amazon.com/images/I/61RxP-B4x9L._AC_UF894,1000_QL80_.jpg",
+      "price": 100,
+      "tags": ["coffee"]
+    }
+  ]
+}
