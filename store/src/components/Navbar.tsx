@@ -54,7 +54,7 @@ export const Navbar = () => {
                     </div>
                   ))}
                   <p className="text-xl font-bold mt-4">
-                    Total: ${cart.reduce((total: any, item: any) => total + ( item.discount ? (100 - item.discount) / 100 : 1) * item.price, 0).toFixed(2)}
+                    Total: ${cart.reduce((total: any, item: any) => total + (item.discount ? (100 - item.discount) / 100 : 1) * item.price, 0).toFixed(2)}
                   </p>
                   <Link href="/checkout">
                     <button onClick={() => { setIsSidebarOpen(false) }} className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 mt-4">
@@ -73,12 +73,7 @@ export const Navbar = () => {
       <nav className="w-full flex items-center py-4 border-b-[1px] z-40">
         <div className="flex px-5 items-center justify-between max-w-[1200px] w-full mx-auto">
           <div className="flex items-center space-x-4 w-full">
-            <Image
-              src="/logo.svg"
-              alt="Request Network"
-              width={100}
-              height={200}
-            />
+            <h1 className="text-2xl font-semibold">Coffee Store</h1>
 
             <ul
               className="flex items-center space-x-4 w-full justify-between"

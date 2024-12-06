@@ -8,7 +8,6 @@ export default function Layout() {
       w="300px"
       h="500px"
       p="0.5rem"
-      border="2px solid white"
     >
       {/* <Navbar /> */}
       <Outlet />
