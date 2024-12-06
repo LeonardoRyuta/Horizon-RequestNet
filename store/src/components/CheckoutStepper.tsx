@@ -4,7 +4,7 @@ import { useState, useContext } from "react";
 import { CartReview } from "./CartReview";
 import { PaymentStep } from "./PaymentStep";
 import { useTicketStore } from "@/store/ticketStore";
-import { CartContext } from "@/app/layout";
+import { CartContext } from "@/lib/context";
 
 const steps = [
   { id: "cart", title: "Cart Review" },

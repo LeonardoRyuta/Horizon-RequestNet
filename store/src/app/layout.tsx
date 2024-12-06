@@ -3,12 +3,11 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
-import VersionDisplay from "@/components/VersionBadge";
 import { useState, createContext } from "react";
+import { CartContext } from "@/lib/context";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export const CartContext = createContext<any>([]);
 
 export default function RootLayout({
   children,

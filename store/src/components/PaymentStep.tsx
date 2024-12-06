@@ -4,7 +4,7 @@ import { useTicketStore } from "@/store/ticketStore";
 import PaymentWidget from "@requestnetwork/payment-widget/react";
 import { useEffect, useState, useContext } from "react";
 import { useRouter } from "next/navigation";
-import { CartContext } from "@/app/layout";
+import { CartContext } from "@/lib/context";
 
 export function PaymentStep() {
   const { cart, setCart } = useContext(CartContext);

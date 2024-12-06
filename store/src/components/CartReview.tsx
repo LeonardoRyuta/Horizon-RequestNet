@@ -2,7 +2,7 @@
 
 import { useTicketStore } from "@/store/ticketStore";
 import { useEffect, useState, useContext } from "react";
-import { CartContext } from "@/app/layout";
+import { CartContext } from "@/lib/context";
 
 export function CartReview() {
   // const { tickets, incrementQuantity, decrementQuantity, clearTickets } =

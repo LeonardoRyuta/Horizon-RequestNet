@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ShoppingCart, X } from "lucide-react";
 import { useState, useEffect, useContext } from "react";
-import { CartContext } from "@/app/layout";
+import { CartContext } from "@/lib/context";
 
 export const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);

@@ -6,7 +6,7 @@ import { CalendarIcon, MapPinIcon } from "lucide-react";
 import { format } from "date-fns";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { useState, useMemo, useEffect, useContext, use } from "react";
-import { CartContext } from "@/app/layout";
+import { CartContext } from "@/lib/context";
 
 interface Item {
   id: number;
